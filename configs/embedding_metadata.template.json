@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0",
+  "model_id": "facebook/esm2_t33_650M_UR50D",
+  "model_revision": "08e4846e537177426273712802403f7ba8261b6c",
+  "checkpoint_files_sha256": {
+    "model.safetensors": "a08adabb949fa67ad3c14b509d04fd60368b35007b0095e3358f81200c4f4db0"
+  },
+  "layer": 33,
+  "pooling": "mean_residue_tokens_after_overlap_average",
+  "window_tail_policy": "fixed_stride_until_previous_window_covers_sequence_end",
+  "max_residues_per_window": 1022,
+  "window_stride": 511,
+  "embedding_dim": 1280,
+  "dtype": "float32",
+  "protein_table_sha256": "REPLACE_WITH_64_CHARACTER_SHA256",
+  "sequence_count": 0,
+  "tokenizer_version": "REPLACE",
+  "python_version": "REPLACE",
+  "torch_version": "REPLACE",
+  "transformers_version": "REPLACE",
+  "device": "REPLACE",
+  "compute_dtype": "float32",
+  "window_count": 0,
+  "batch_size": 1,
+  "wall_time_seconds": 0.0,
+  "peak_gpu_memory_bytes": 0,
+  "created_at": "REPLACE_WITH_ISO8601_TIMESTAMP"
+}

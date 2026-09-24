@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.0",
+  "method": "build_normalized_benchmark_v0.3",
+  "status": "provisional_precluster_presplit",
+  "inputs": {
+    "raw_audit_sha256": "f864d637796b7ce8dba7053a2d7e90884adeac1d404fde6bcfec98f30e741074",
+    "intact_metadata_sha256": "c6582eba7d029f6556a1ba5710c10be52f5c16ce7e3ce309cc4c6b4178a377b1",
+    "identifier_resolution_sha256": "7d5896527dae97c4b80fbcad141cb0d9df205dc5f53927fffb0b1af6d7deb0c6",
+    "identifier_resolution_metadata_sha256": "95f312a2f1cd93bb2399010501fdd4a8e5a77e747c614e76c7c6518e3c6a7aca",
+    "proteins_precluster_sha256": "b485f2443d3fcf854a34a9cc852cbb636552ee1872f2056300b13354696f5e69",
+    "luck2020_candidates_sha256": "f856ecdc11b9d879240afada7d077e59aee226cd3545df3d3cb4288b8380d167",
+    "luck2020_metadata_sha256": "767207fc2e8a56beac7e7e8c9adcc484a157fe57a90e01e2a7fb8647f36e9221",
+    "luck2020_resolution_sha256": "365c20cf5038351a946ea786d4ec061d16d1119d5e8eb172d9826af631dd106b",
+    "luck2020_resolution_metadata_sha256": "3031c11c6660407f3806cfa1b86de9a8377cbf0dde6b26bf0a5402bf23038739"
+  },
+  "counts": {
+    "proteins": 9377,
+    "pairs": 53486,
+    "evidence": 56655,
+    "source_rows_quarantined_before_pairing": 5138,
+    "pair_status": {
+      "eligible": 52964,
+      "quarantine": 522
+    },
+    "pair_evidence_class": {
+      "curated_negative": 825,
+      "direct_positive": 51914,
+      "screen_negative": 737,
+      "unlabeled": 10
+    }
+  },
+  "outputs": {
+    "proteins.csv": {
+      "rows": 9377,
+      "sha256": "aec9b7e9c34051daad82a145c317622a804b9d498171b6ff466d27228d1c5840"
+    },
+    "pairs.csv": {
+      "rows": 53486,
+      "sha256": "d03e0ddae828c9a9646dfad91dcc7e07602e74dac0e95e00549d9d8d9d2cd059"
+    },
+    "evidence.csv": {
+      "rows": 56655,
+      "sha256": "7fde3c832975a9c2fce78804cf6035568e9e917a97ea668229ed8873c43c6f3e"
+    },
+    "source_quarantine.tsv": {
+      "rows": 5138,
+      "sha256": "bae7a7a99a08f146c49359e965c3a58896d8db84460adeb8647f1c05e0a81406"
+    },
+    "splits.csv": {
+      "rows": 0,
+      "sha256": "3afab0b96f8e6a1f67a2038e942d50a1b5faee6af338cf67943c79d268fec3ba"
+    }
+  },
+  "warnings": [
+    "No unobserved pair was labeled negative.",
+    "Negatome terms are not stated on the official download page; do not redistribute its rows.",
+    "This dataset is not frozen until contradiction review, MMseqs2 clustering, and C3 split validation pass."
+  ]
+}

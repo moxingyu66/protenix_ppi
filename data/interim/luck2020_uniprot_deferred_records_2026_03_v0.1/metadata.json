@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0",
+  "method": "fetch_deferred_uniprot_records_v0.1",
+  "uniprot_release": "2026_03",
+  "uniprot_release_date": "02-Sep-2026",
+  "resolution_input": {
+    "path": "D:\\hitsz\\research\\protenix_ppi\\data\\interim\\luck2020_identifier_resolution_2026_03_v0.1\\identifier_resolution.tsv",
+    "sha256": "d19f7e01d681cb14ef13161d160608834333909c651f799bb2dd84c082fb00e7"
+  },
+  "release_evidence_sha256": "733913b362b641ac2d8de42a6220e794abde0e47d57d6feb57e442c6bf3dac6e",
+  "request": {
+    "count": 11,
+    "sha256": "8050230a647a9c261d666a2c3147bdae0605d805f28c397e994edf4b6ba69d65"
+  },
+  "records": {
+    "count": 11,
+    "sha256": "4316e38bd39d9bae7a8a808028f5201c2aebea8f1e47bf0e584fd878acf838f4",
+    "reviewed_counts": {
+      "unreviewed": 11
+    },
+    "organism_counts": {
+      "9606": 11
+    }
+  },
+  "missing": {
+    "count": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "api_headers": {
+    "x-uniprot-release": "2026_03",
+    "x-uniprot-release-date": "02-September-2026",
+    "x-api-deployment-date": "02-September-2026"
+  }
+}

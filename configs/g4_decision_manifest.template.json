@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0",
+  "decision_id": "REPLACE_WITH_UNIQUE_G4_DECISION_ID",
+  "created_at": "REPLACE_WITH_ISO8601_TIMESTAMP_WITH_TIMEZONE",
+  "benchmark_freeze_manifest": {
+    "path": "REPLACE_WITH_BENCHMARK_FREEZE_MANIFEST_JSON",
+    "sha256": "REPLACE_WITH_64_CHARACTER_SHA256"
+  },
+  "comparison_suites": {
+    "b0b_vs_b0a": {
+      "path": "REPLACE_WITH_B0B_VS_B0A_COMPARISON_SUITE_JSON",
+      "sha256": "REPLACE_WITH_64_CHARACTER_SHA256"
+    },
+    "b1_vs_constant": {
+      "path": "REPLACE_WITH_B1_VS_CONSTANT_COMPARISON_SUITE_JSON",
+      "sha256": "REPLACE_WITH_64_CHARACTER_SHA256"
+    },
+    "b2_vs_b0b": {
+      "path": "REPLACE_WITH_B2_VS_B0B_COMPARISON_SUITE_JSON",
+      "sha256": "REPLACE_WITH_64_CHARACTER_SHA256"
+    },
+    "b3_vs_b2": {
+      "path": "REPLACE_WITH_B3_VS_B2_COMPARISON_SUITE_JSON",
+      "sha256": "REPLACE_WITH_64_CHARACTER_SHA256"
+    }
+  },
+  "b3_scientific_limitation": {
+    "category": "REPLACE_WITH_REGISTERED_CATEGORY",
+    "affected_cohort": "balanced_explicit_1to1",
+    "observed_pattern": "REPLACE_WITH_A_QUANTIFIED_OR_REPRODUCIBLE_ERROR_PATTERN",
+    "mechanistic_hypothesis": "REPLACE_WITH_A_TESTABLE_BIOLOGICAL_OR_REPRESENTATIONAL_HYPOTHESIS",
+    "why_b3_cannot_address_it": "REPLACE_WITH_WHY_A_FROZEN_FEATURE_HEAD_CANNOT_REMOVE_THE_LIMITATION",
+    "why_structural_tuning_may_address_it": "REPLACE_WITH_THE_SPECIFIC_STRUCTURAL_MECHANISM_TO_TEST",
+    "scientific_bottleneck": false,
+    "engineering_only": true,
+    "b4_b5_outputs_consulted": false,
+    "evidence": {
+      "path": "REPLACE_WITH_B3_ERROR_ANALYSIS_FILE",
+      "sha256": "REPLACE_WITH_64_CHARACTER_SHA256"
+    },
+    "human_review": {
+      "status": "REPLACE_WITH_APPROVED_OR_REJECTED",
+      "reviewer_role": "REPLACE_WITH_REVIEWER_ROLE",
+      "reviewed_at": "REPLACE_WITH_ISO8601_TIMESTAMP_WITH_TIMEZONE"
+    }
+  },
+  "structural_preservation": {
+    "structural_set": {
+      "path": "REPLACE_WITH_FROZEN_STRUCTURAL_SET_CSV",
+      "sha256": "REPLACE_WITH_64_CHARACTER_SHA256"
+    },
+    "homology_audit": {
+      "path": "REPLACE_WITH_STRUCTURAL_HOMOLOGY_AUDIT_JSON",
+      "sha256": "REPLACE_WITH_64_CHARACTER_SHA256"
+    },
+    "frozen_before_structural_tuning": false,
+    "b4_b5_outputs_consulted": false
+  },
+  "g1_run": {
+    "path": "REPLACE_WITH_VALIDATED_G1_RUN_DIRECTORY",
+    "manifest_sha256": "REPLACE_WITH_64_CHARACTER_SHA256"
+  },
+  "proposed_structural_tuning": {
+    "method_id": "REPLACE_WITH_B4_OR_B5",
+    "backward_capacity_report": {
+      "path": "REPLACE_WITH_BACKWARD_CAPACITY_REPORT_JSON",
+      "sha256": "REPLACE_WITH_64_CHARACTER_SHA256"
+    }
+  }
+}

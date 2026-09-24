@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "status": "frozen_before_B0b_scoring",
+  "retrieved_at": "2026-09-15T13:54:32.6788562+08:00",
+  "repository_api_url": "https://huggingface.co/api/models/facebook/esm2_t33_650M_UR50D?blobs=true",
+  "model_id": "facebook/esm2_t33_650M_UR50D",
+  "model_revision": "08e4846e537177426273712802403f7ba8261b6c",
+  "checkpoint": {
+    "filename": "model.safetensors",
+    "sha256": "a08adabb949fa67ad3c14b509d04fd60368b35007b0095e3358f81200c4f4db0",
+    "size_bytes": 2609506392,
+    "huggingface_blob_id": "643aae4f58fed7ee3b16a2913af8d406249cb5cf"
+  },
+  "scientific_role": "B0b frozen sequence-only comparator",
+  "notes": [
+    "The revision and checkpoint digest were frozen before any B0b model score was generated.",
+    "The extractor rejects a primary-model snapshot whose resolved revision or local checkpoint SHA-256 differs from this lock."
+  ]
+}

@@ -1,0 +1,377 @@
+{
+  "schema_version": "1.0",
+  "registry_id": "human_ppi_sources_20260915",
+  "status": "pass",
+  "acquired_source_ids": [
+    "huri_pairs",
+    "psi_mi_obo",
+    "psi_mi_license",
+    "negatome2_manual_stringent",
+    "negatome2_supplement",
+    "intact_human_negative",
+    "intact_human_archive",
+    "intact_mitab_readme"
+  ],
+  "not_acquired_source_ids": [],
+  "failed_source_ids": [],
+  "integrity": {
+    "huri_pairs": {
+      "status": "pass",
+      "errors": [],
+      "path": "D:\\hitsz\\research\\protenix_ppi\\data\\raw\\HuRI\\portal_2020-03-09\\HuRI.tsv",
+      "manifest": "D:\\hitsz\\research\\protenix_ppi\\data\\raw\\HuRI\\portal_2020-03-09\\huri_pairs.manifest.json",
+      "observed": {
+        "valid": true,
+        "errors": [],
+        "bytes": 1681536,
+        "sha256": "4cdf94366ff6e23e71ef9ec81922e85b2b3a1fb08e938f7b00d86c027cf1ecd6",
+        "line_count": 52548
+      },
+      "license_status": "confirmed_CC_BY_4.0"
+    },
+    "psi_mi_obo": {
+      "status": "pass",
+      "errors": [],
+      "path": "D:\\hitsz\\research\\protenix_ppi\\data\\raw\\PSI-MI controlled vocabulary\\git_13b574767a81580092e7f6b62ff84c0c8f75cf69\\psi-mi.obo",
+      "manifest": "D:\\hitsz\\research\\protenix_ppi\\data\\raw\\PSI-MI controlled vocabulary\\git_13b574767a81580092e7f6b62ff84c0c8f75cf69\\psi_mi_obo.manifest.json",
+      "observed": {
+        "valid": true,
+        "errors": [],
+        "bytes": 742018,
+        "sha256": "b1315efd86a13988df97d2daefed025dbd26b98d66104da76ea3e85706534d2f",
+        "line_count": 15192
+      },
+      "license_status": "confirmed_CC_BY_4.0"
+    },
+    "psi_mi_license": {
+      "status": "pass",
+      "errors": [],
+      "path": "D:\\hitsz\\research\\protenix_ppi\\data\\raw\\PSI-MI controlled vocabulary\\git_13b574767a81580092e7f6b62ff84c0c8f75cf69\\LICENSE",
+      "manifest": "D:\\hitsz\\research\\protenix_ppi\\data\\raw\\PSI-MI controlled vocabulary\\git_13b574767a81580092e7f6b62ff84c0c8f75cf69\\psi_mi_license.manifest.json",
+      "observed": {
+        "valid": true,
+        "errors": [],
+        "bytes": 18658,
+        "sha256": "f5b745ef98087f531e719ee8ca6a96809444573ecc7173c6fa68eaad39b3cc3f",
+        "line_count": null
+      },
+      "license_status": "confirmed_CC_BY_4.0"
+    },
+    "negatome2_manual_stringent": {
+      "status": "pass",
+      "errors": [],
+      "path": "D:\\hitsz\\research\\protenix_ppi\\data\\raw\\Negatome 2.0\\manual_stringent_site_file_2021-09-15\\manual_stringent.txt",
+      "manifest": "D:\\hitsz\\research\\protenix_ppi\\data\\raw\\Negatome 2.0\\manual_stringent_site_file_2021-09-15\\negatome2_manual_stringent.manifest.json",
+      "observed": {
+        "valid": true,
+        "errors": [],
+        "bytes": 113757,
+        "sha256": "6391316c19abaf8a677ef65878891e9ae6fd9346dff53e2c0617cb34516f578c",
+        "line_count": 1991
+      },
+      "license_status": "not_stated_on_official_download_page_manual_confirmation_required"
+    },
+    "negatome2_supplement": {
+      "status": "pass",
+      "errors": [],
+      "path": "D:\\hitsz\\research\\protenix_ppi\\data\\raw\\Negatome 2.0\\site_file_2021-09-15\\SupplementaryMaterial.pdf",
+      "manifest": "D:\\hitsz\\research\\protenix_ppi\\data\\raw\\Negatome 2.0\\site_file_2021-09-15\\negatome2_supplement.manifest.json",
+      "observed": {
+        "valid": true,
+        "errors": [],
+        "bytes": 117596,
+        "sha256": "718b31537bdd013ccef9e52433e093a5a36ef2b4b68ce012540cd6af370b4ca8",
+        "line_count": null
+      },
+      "license_status": "not_stated_on_official_download_page_manual_confirmation_required"
+    },
+    "intact_human_negative": {
+      "status": "pass",
+      "errors": [],
+      "path": "D:\\hitsz\\research\\protenix_ppi\\data\\raw\\IntAct\\2026-01-09\\human_negative.txt",
+      "manifest": "D:\\hitsz\\research\\protenix_ppi\\data\\raw\\IntAct\\2026-01-09\\intact_human_negative.manifest.json",
+      "observed": {
+        "valid": true,
+        "errors": [],
+        "bytes": 5003496,
+        "sha256": "6f46ba309fc5072f5712f03a895392343e549a23adc424d7fea823699abed864",
+        "line_count": 947
+      },
+      "license_status": "EMBL_EBI_open_data_terms_attribution_expected_source_owner_terms_may_apply"
+    },
+    "intact_human_archive": {
+      "status": "pass",
+      "errors": [],
+      "path": "D:\\hitsz\\research\\protenix_ppi\\data\\raw\\IntAct\\2026-01-09\\human.zip",
+      "manifest": "D:\\hitsz\\research\\protenix_ppi\\data\\raw\\IntAct\\2026-01-09\\intact_human_archive.manifest.json",
+      "observed": {
+        "valid": true,
+        "errors": [],
+        "bytes": 1171103835,
+        "sha256": "4464f68a9b405bb5fddaced6e0a6b1b8e4386b65956c41cb22763c81d5337a46",
+        "line_count": null
+      },
+      "license_status": "EMBL_EBI_open_data_terms_attribution_expected_source_owner_terms_may_apply"
+    },
+    "intact_mitab_readme": {
+      "status": "pass",
+      "errors": [],
+      "path": "D:\\hitsz\\research\\protenix_ppi\\data\\raw\\IntAct\\2026-01-09\\README",
+      "manifest": "D:\\hitsz\\research\\protenix_ppi\\data\\raw\\IntAct\\2026-01-09\\intact_mitab_readme.manifest.json",
+      "observed": {
+        "valid": true,
+        "errors": [],
+        "bytes": 2263,
+        "sha256": "c2ba5d37522ea3928fc68e947aec7307709da6c87a4421fada372d7501cc7130",
+        "line_count": 42
+      },
+      "license_status": "EMBL_EBI_open_data_terms_attribution_expected_source_owner_terms_may_apply"
+    }
+  },
+  "profiles": {
+    "huri_pairs": {
+      "format": "headerless_two_column_ensembl_gene_pairs",
+      "rows": 52548,
+      "invalid_rows": 0,
+      "first_invalid_lines": [],
+      "self_pairs_to_quarantine": 480,
+      "unique_directed_pairs": 52548,
+      "unique_undirected_pairs": 52548,
+      "unique_ensembl_genes": 8272,
+      "required_next_step": "Map GENCODE-v27 Ensembl genes to an explicitly pinned UniProt canonical release; never guess one-to-one mappings."
+    },
+    "negatome2_manual_stringent": {
+      "format": "four_columns_accession_accession_publication_detection_method",
+      "rows": 1991,
+      "valid_four_column_rows": 1991,
+      "invalid_column_count_rows": 0,
+      "self_pairs_to_quarantine": 70,
+      "isoform_specific_rows_to_quarantine": 55,
+      "unique_directed_pairs": 1964,
+      "unique_undirected_pairs": 1956,
+      "duplicate_or_reciprocal_rows": 35,
+      "unique_accession_strings": 1733,
+      "unique_publication_identifiers": 652,
+      "top_detection_methods": [
+        [
+          "MI:0019",
+          711
+        ],
+        [
+          "MI:0018",
+          507
+        ],
+        [
+          "MI:0096",
+          127
+        ],
+        [
+          "MI:0007",
+          124
+        ],
+        [
+          "MI:0004",
+          114
+        ],
+        [
+          "MI:0059",
+          53
+        ],
+        [
+          "MI:0405",
+          34
+        ],
+        [
+          "MI:0006",
+          34
+        ],
+        [
+          "MI:0110",
+          29
+        ],
+        [
+          "MI:0054",
+          20
+        ],
+        [
+          "MI:0045",
+          16
+        ],
+        [
+          "MI:0030",
+          16
+        ],
+        [
+          "MI:0411",
+          15
+        ],
+        [
+          "MI:0027",
+          15
+        ],
+        [
+          "MI:0892",
+          15
+        ]
+      ],
+      "required_next_step": "Resolve taxonomy and current accessions through a pinned UniProt release; preserve isoforms and self-pairs in quarantine, and do not redistribute until license terms are confirmed."
+    },
+    "intact_human_negative": {
+      "format": "PSI_MITAB_2.7_negative_export",
+      "columns": 42,
+      "rows": 946,
+      "negative_flag_counts": {
+        "true": 946
+      },
+      "both_interactors_human_rows": 905,
+      "both_human_protein_rows": 903,
+      "both_human_protein_primary_uniprot_rows": 781,
+      "unique_human_protein_endpoint_pairs": 867,
+      "unique_human_protein_primary_uniprot_pairs": 745,
+      "unique_interaction_identifiers": 899,
+      "top_interaction_types_all_rows": [
+        [
+          "psi-mi:\"MI:0915\"(physical association)",
+          896
+        ],
+        [
+          "psi-mi:\"MI:0407\"(direct interaction)",
+          30
+        ],
+        [
+          "psi-mi:\"MI:0403\"(colocalization)",
+          11
+        ],
+        [
+          "psi-mi:\"MI:0914\"(association)",
+          7
+        ],
+        [
+          "psi-mi:\"MI:0570\"(protein cleavage)",
+          1
+        ],
+        [
+          "psi-mi:\"MI:2364\"(proximity)",
+          1
+        ]
+      ],
+      "top_detection_methods_all_rows": [
+        [
+          "psi-mi:\"MI:0397\"(two hybrid array)",
+          763
+        ],
+        [
+          "psi-mi:\"MI:0096\"(pull down)",
+          67
+        ],
+        [
+          "psi-mi:\"MI:0007\"(anti tag coimmunoprecipitation)",
+          48
+        ],
+        [
+          "psi-mi:\"MI:0018\"(two hybrid)",
+          24
+        ],
+        [
+          "psi-mi:\"MI:0006\"(anti bait coimmunoprecipitation)",
+          18
+        ],
+        [
+          "psi-mi:\"MI:0416\"(fluorescence microscopy)",
+          6
+        ],
+        [
+          "psi-mi:\"MI:0663\"(confocal microscopy)",
+          5
+        ],
+        [
+          "psi-mi:\"MI:0055\"(fluorescent resonance energy transfer)",
+          3
+        ],
+        [
+          "psi-mi:\"MI:0065\"(isothermal titration calorimetry)",
+          2
+        ],
+        [
+          "psi-mi:\"MI:0019\"(coimmunoprecipitation)",
+          2
+        ]
+      ],
+      "required_next_step": "Require taxid 9606 and protein type for both endpoints, resolve non-UniProt IDs explicitly, and retain this source as a distinct negative stratum."
+    },
+    "psi_mi_obo": {
+      "term_count": 1655,
+      "essential_terms": {
+        "MI:0407": {
+          "expected_name": "direct interaction",
+          "observed_name": "direct interaction",
+          "parents": [
+            "MI:0915"
+          ],
+          "present": true
+        },
+        "MI:0915": {
+          "expected_name": "physical association",
+          "observed_name": "physical association",
+          "parents": [
+            "MI:0914"
+          ],
+          "present": true
+        },
+        "MI:0914": {
+          "expected_name": "association",
+          "observed_name": "association",
+          "parents": [
+            "MI:2232"
+          ],
+          "present": true
+        },
+        "MI:0208": {
+          "expected_name": "genetic interaction (sensu unexpected)",
+          "observed_name": "genetic interaction (sensu unexpected)",
+          "parents": [
+            "MI:2402"
+          ],
+          "present": true
+        },
+        "MI:0018": {
+          "expected_name": "two hybrid",
+          "observed_name": "two hybrid",
+          "parents": [
+            "MI:0232"
+          ],
+          "present": true
+        },
+        "MI:0004": {
+          "expected_name": "affinity chromatography technology",
+          "observed_name": "affinity chromatography technology",
+          "parents": [
+            "MI:0091",
+            "MI:0400"
+          ],
+          "present": true
+        },
+        "MI:0006": {
+          "expected_name": "anti bait coimmunoprecipitation",
+          "observed_name": "anti bait coimmunoprecipitation",
+          "parents": [
+            "MI:0019"
+          ],
+          "present": true
+        },
+        "MI:0114": {
+          "expected_name": "x-ray crystallography",
+          "observed_name": "x-ray crystallography",
+          "parents": [
+            "MI:0013",
+            "MI:0659"
+          ],
+          "present": true
+        }
+      },
+      "essential_term_mismatches": [],
+      "required_next_step": "Generate and freeze interaction-type and detection-method descendant sets separately before filtering IntAct."
+    }
+  },
+  "interpretation_warning": "Acquisition and format integrity do not establish biological eligibility. Identifier mapping, taxonomy, ontology filtering, contradiction resolution, and leakage control remain mandatory."
+}

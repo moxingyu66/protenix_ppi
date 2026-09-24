@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "method": "build_identifier_inventory_v0.1",
+  "raw_audit": "D:\\hitsz\\research\\protenix_ppi\\artifacts\\data\\raw_source_audit_20260915.json",
+  "raw_audit_sha256": "f864d637796b7ce8dba7053a2d7e90884adeac1d404fde6bcfec98f30e741074",
+  "intact_interim_metadata": "D:\\hitsz\\research\\protenix_ppi\\data\\interim\\intact_2026-01-09_direct_v0.1\\metadata.json",
+  "intact_interim_metadata_sha256": "c6582eba7d029f6556a1ba5710c10be52f5c16ce7e3ce309cc4c6b4178a377b1",
+  "inventory": {
+    "path": "D:\\hitsz\\research\\protenix_ppi\\data\\interim\\identifier_inventory_v0.1\\identifier_inventory.tsv",
+    "rows": 12887,
+    "sha256": "80d88e8c4a0ee78e33f6b27d0739cfbada1dbeb7a5f969fdeeccc82c3f485f30"
+  },
+  "unique_rows_by_source": {
+    "HuRI": 8272,
+    "IntAct": 2882,
+    "Negatome 2.0": 1733
+  },
+  "mapping_status_counts": {
+    "manual_review_non_uniprot_primary": 39,
+    "mapping_candidate": 12348,
+    "quarantine_isoform_specific": 500
+  },
+  "request_files": {
+    "Ensembl": {
+      "path": "D:\\hitsz\\research\\protenix_ppi\\data\\interim\\identifier_inventory_v0.1\\ensembl_gene_ids.txt",
+      "count": 8272,
+      "sha256": "22c9cc9dc3d32cd8de9ca80107cb580d6005ac583c10224081f35f7641e7ec02"
+    },
+    "UniProtKB_AC-ID": {
+      "path": "D:\\hitsz\\research\\protenix_ppi\\data\\interim\\identifier_inventory_v0.1\\uniprotkb_accession_ids.txt",
+      "count": 3617,
+      "sha256": "14f873520d92fd039496b624403c2de0ef4e8fc4fa85a9e2d78c3b3f76f53593"
+    }
+  },
+  "policy_warning": "This inventory contains mapping requests, not resolved proteins or PPI labels. Isoforms and non-UniProt primary identifiers remain outside automatic acceptance."
+}

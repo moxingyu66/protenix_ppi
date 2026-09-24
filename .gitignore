@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+
+# Large or generated experiment artifacts
+artifacts/g1/*/outputs/
+artifacts/g1/*/telemetry/
+artifacts/g1/*/logs/
+checkpoints/
+data/raw/
+data/cache/
+

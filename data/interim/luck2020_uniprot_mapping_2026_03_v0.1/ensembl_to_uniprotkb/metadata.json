@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "method": "uniprot_idmapping_rest_v0.1",
+  "from": "Ensembl",
+  "to": "UniProtKB",
+  "job_id": "kG41RdqrfU",
+  "redirect_url": "https://rest.uniprot.org/idmapping/uniprotkb/results/kG41RdqrfU",
+  "uniprot_release": "2026_03",
+  "uniprot_release_date": "02-Sep-2026",
+  "api_headers": {
+    "x-uniprot-release": "2026_03",
+    "x-uniprot-release-date": "02-September-2026",
+    "x-api-deployment-date": "02-September-2026"
+  },
+  "request": {
+    "path": "D:\\hitsz\\research\\protenix_ppi\\data\\interim\\luck2020_rrs_negatives_v0.1\\ensembl_gene_ids.txt",
+    "sha256": "be213951c4f33c5df5b27b4a1d56e45cfb33074a2efc62f4ce4fe7e59a5c0a34",
+    "count": 758
+  },
+  "mapping": {
+    "path": "D:\\hitsz\\research\\protenix_ppi\\data\\interim\\luck2020_uniprot_mapping_2026_03_v0.1\\ensembl_to_uniprotkb\\mapping.tsv",
+    "sha256": "c154ac278fc6210c7dedfa9a5cf3f0929ffad62ad4b21d39ce86ac857787aa64",
+    "requested_ids": 758,
+    "mapping_rows": 6567,
+    "mapped_source_ids": 755,
+    "unmapped_source_ids": 3,
+    "one_to_one_source_ids": 90,
+    "one_to_many_source_ids": 665,
+    "unique_target_ids": 6567
+  },
+  "unmapped": {
+    "path": "D:\\hitsz\\research\\protenix_ppi\\data\\interim\\luck2020_uniprot_mapping_2026_03_v0.1\\ensembl_to_uniprotkb\\unmapped_ids.txt",
+    "sha256": "9caba8c10729528682a9d6635709c24c3fbb7e6c0ddf5741ae20f0a96eb8c87d",
+    "count": 3
+  },
+  "decision_warning": "The raw mapping snapshot does not authorize automatic selection among multiple targets. One-to-many and unmapped sources must remain quarantined."
+}

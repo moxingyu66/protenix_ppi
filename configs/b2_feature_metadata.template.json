@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "model_name": "protenix_base_default_v1.0.0",
+  "declared_training_cutoff": "2021-09-30",
+  "checkpoint_sha256": "REPLACE_FROM_BACKBONE_LOCK",
+  "feature_definition_version": "REPLACE_AFTER_G1",
+  "pair_count": "REPLACE_AFTER_EXTRACTION",
+  "feature_dim": "REPLACE_AFTER_EXTRACTION",
+  "feature_names": ["REPLACE_AFTER_G1"],
+  "dtype": "float32",
+  "pairs_sha256": "REPLACE_WITH_64_CHARACTER_SHA256",
+  "splits_sha256": "REPLACE_WITH_64_CHARACTER_SHA256",
+  "backbone_lock_sha256": "REPLACE_WITH_64_CHARACTER_SHA256",
+  "feature_extraction_lock_sha256": "REPLACE_WITH_64_CHARACTER_SHA256",
+  "b2_hook_validation_sha256": "REPLACE_WITH_64_CHARACTER_SHA256"
+}

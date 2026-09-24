@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "repository_url": "https://github.com/bytedance/Protenix.git",
+  "source_commit": "REPLACE_WITH_40_CHARACTER_GIT_COMMIT",
+  "package_version": "REPLACE_WITH_INSTALLED_VERSION",
+  "model_name": "protenix_base_default_v1.0.0",
+  "declared_training_cutoff": "2021-09-30",
+  "checkpoint_path": "REPLACE_WITH_SERVER_PATH",
+  "checkpoint_sha256": "REPLACE_WITH_64_CHARACTER_SHA256",
+  "python_version": "REPLACE",
+  "torch_version": "REPLACE",
+  "cuda_runtime": "REPLACE",
+  "nvidia_driver": "REPLACE",
+  "triangle_attention_kernel": "REPLACE",
+  "triangle_multiplicative_kernel": "REPLACE",
+  "g0_route": "REPLACE_WITH_A_B_OR_C",
+  "created_at": "REPLACE_WITH_ISO8601_TIMESTAMP"
+}
+

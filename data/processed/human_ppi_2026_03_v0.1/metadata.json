@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0",
+  "method": "build_normalized_benchmark_v0.1",
+  "status": "provisional_precluster_presplit",
+  "inputs": {
+    "raw_audit_sha256": "f864d637796b7ce8dba7053a2d7e90884adeac1d404fde6bcfec98f30e741074",
+    "intact_metadata_sha256": "c6582eba7d029f6556a1ba5710c10be52f5c16ce7e3ce309cc4c6b4178a377b1",
+    "identifier_resolution_sha256": "7d5896527dae97c4b80fbcad141cb0d9df205dc5f53927fffb0b1af6d7deb0c6",
+    "identifier_resolution_metadata_sha256": "95f312a2f1cd93bb2399010501fdd4a8e5a77e747c614e76c7c6518e3c6a7aca",
+    "proteins_precluster_sha256": "b485f2443d3fcf854a34a9cc852cbb636552ee1872f2056300b13354696f5e69"
+  },
+  "counts": {
+    "proteins": 9063,
+    "pairs": 53074,
+    "evidence": 55516,
+    "source_rows_quarantined_before_pairing": 4990,
+    "pair_status": {
+      "eligible": 52551,
+      "quarantine": 523
+    },
+    "pair_evidence_class": {
+      "curated_negative": 827,
+      "direct_positive": 51913,
+      "screen_negative": 323,
+      "unlabeled": 11
+    }
+  },
+  "outputs": {
+    "proteins.csv": {
+      "rows": 9063,
+      "sha256": "2acabd0ab0e157b2068b3203efa99e98fb6a9329c989585486550563648f3c47"
+    },
+    "pairs.csv": {
+      "rows": 53074,
+      "sha256": "493bf798898e5ee889796231817ef56381c27a1c3f1ddc5228a89d1e9c111c59"
+    },
+    "evidence.csv": {
+      "rows": 55516,
+      "sha256": "4022bf8aa89f236a496f9f04354900b8a2e467008ec5f9c41f3c9c829fcc381f"
+    },
+    "source_quarantine.tsv": {
+      "rows": 4990,
+      "sha256": "5c45426f7544dfbd4c631f03e1de4c186190f969a323aaf2c39974c1120a389e"
+    },
+    "splits.csv": {
+      "rows": 0,
+      "sha256": "3afab0b96f8e6a1f67a2038e942d50a1b5faee6af338cf67943c79d268fec3ba"
+    }
+  },
+  "warnings": [
+    "No unobserved pair was labeled negative.",
+    "Negatome terms are not stated on the official download page; do not redistribute its rows.",
+    "This dataset is not frozen until contradiction review, MMseqs2 clustering, and C3 split validation pass."
+  ]
+}

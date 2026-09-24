@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "method": "stream_filter_intact_mitab_v0.1",
+  "source_version": "2026-01-09",
+  "source_archive": "D:\\hitsz\\research\\protenix_ppi\\data\\raw\\IntAct\\2026-01-09\\human.zip",
+  "source_archive_sha256": "4464f68a9b405bb5fddaced6e0a6b1b8e4386b65956c41cb22763c81d5337a46",
+  "zip_member": "human.txt",
+  "zip_member_uncompressed_bytes": 9280698017,
+  "compiled_policy": "D:\\hitsz\\research\\protenix_ppi\\artifacts\\data\\psi_mi_filter_compiled_v0.1.json",
+  "compiled_policy_sha256": "af53a0b8c951dd3e1abfdb7e09c508107348532d31ce3499d44333716244c869",
+  "policy_id": "human_direct_ppi_psi_mi_v0.1",
+  "ontology_commit": "13b574767a81580092e7f6b62ff84c0c8f75cf69",
+  "ontology_sha256": "b1315efd86a13988df97d2daefed025dbd26b98d66104da76ea3e85706534d2f",
+  "counts": {
+    "decision_candidate": 5064,
+    "decision_excluded": 1169873,
+    "decision_review": 65790,
+    "reason_auto_direct_candidate": 5064,
+    "reason_detection_method_requires_review": 54134,
+    "reason_direct_interaction_descendant_requires_review": 3659,
+    "reason_generic_or_nonphysical_interaction_type": 894748,
+    "reason_non_uniprot_primary_identifier": 67,
+    "reason_not_direct_interaction_type": 82528,
+    "reason_not_two_human_endpoints": 164816,
+    "reason_not_two_protein_endpoints": 27781,
+    "reason_participant_expansion_requires_review": 280,
+    "reason_self_pair_outside_primary_scope": 606,
+    "reason_unlisted_detection_method": 7044,
+    "rows_total": 1240727
+  },
+  "outputs": {
+    "intact_direct_candidates.tsv": {
+      "sha256": "d3a3146bf9119017564352a93a16ce3fc62f8e6b2bf509227c0fb8558f95e8d9",
+      "bytes": 3579553
+    },
+    "intact_manual_review.tsv": {
+      "sha256": "fe4df4420fcaadab43ad26931a79df01e0764647e5d0bc9f21db4026ddb87704",
+      "bytes": 44998119
+    }
+  },
+  "interpretation_warning": "Candidate rows are evidence candidates, not normalized PPI labels. UniProt mapping, isoform policy, contradiction resolution, pair canonicalization, and group/leakage audits remain required."
+}

@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0",
+  "structural_set_sha256": "REPLACE_WITH_64_CHARACTER_SHA256",
+  "benchmark_freeze_manifest_sha256": "REPLACE_WITH_64_CHARACTER_SHA256",
+  "tool": {
+    "name": "MMseqs2",
+    "version": "REPLACE_WITH_EXACT_VERSION",
+    "command_evidence": {
+      "path": "REPLACE_WITH_COMMAND_AND_LOG_FILE",
+      "sha256": "REPLACE_WITH_64_CHARACTER_SHA256"
+    }
+  },
+  "thresholds": {
+    "maximum_sequence_identity": 0.3,
+    "minimum_coverage": 0.5
+  },
+  "b4_b5_outputs_consulted": false,
+  "complexes": [
+    {
+      "complex_id": "REPLACE_WITH_COMPLEX_ID",
+      "ppi_train_protein_overlap": true,
+      "homology_cluster_overlap": true
+    }
+  ]
+}

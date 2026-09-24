@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "registry_id": "human_ppi_supplemental_sources_20260915",
+  "created_at": "2026-09-15",
+  "sources": [
+    {
+      "source_id": "luck2020_supplementary_tables",
+      "source_database": "Luck2020",
+      "source_version": "Nature_supplement_2020-04-08",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-020-2188-x/MediaObjects/41586_2020_2188_MOESM3_ESM.zip",
+      "filename": "Supplementary_Tables.zip",
+      "expected_bytes": 17506577,
+      "expected_sha256": "377f3dca340ab706721b8545afa00c9777dce6b3aeda1c79a3902d4ad5c43a06",
+      "expected_line_count": null,
+      "download_class": "core",
+      "requires_insecure_tls": false,
+      "license_status": "publisher_supplement_terms_and_underlying_HuRI_CC_BY_4.0_human_confirmation_before_redistribution",
+      "license_evidence_url": "https://interactome-atlas.org/download",
+      "citation": "Luck et al., Nature 2020, DOI:10.1038/s41586-020-2188-x",
+      "notes": "Tables 2, 5, and 6 contain ORF-to-Ensembl mappings and explicit assay results for PRS/RRS controls. Only RRS rows with a recorded negative result are eligible as screen-negative candidates; invalid, autoactivator, positive, unmapped, and ambiguous-ORF rows remain outside automatic acceptance."
+    }
+  ]
+}

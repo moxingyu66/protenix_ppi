@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "model_name": "protenix_base_default_v1.0.0",
+  "declared_training_cutoff": "2021-09-30",
+  "source_commit": "REPLACE_AFTER_G1_WITH_40_CHARACTER_COMMIT",
+  "backbone_lock_sha256": "REPLACE_AFTER_G1_WITH_64_CHARACTER_SHA256",
+  "g1_manifest_sha256": "REPLACE_AFTER_G1_WITH_64_CHARACTER_SHA256",
+  "hook_evidence_sha256": "REPLACE_AFTER_G1_WITH_64_CHARACTER_SHA256",
+  "inference_condition_lock_sha256": "REPLACE_AFTER_G1_WITH_64_CHARACTER_SHA256",
+  "seed_policy": "REPLACE_AFTER_G1",
+  "sample_policy": "REPLACE_AFTER_G1",
+  "label_blind": true,
+  "swap_invariant": true,
+  "swap_invariance_audit": {
+    "pair_count": "REPLACE_AFTER_G1",
+    "tolerance": "REPLACE_AFTER_G1",
+    "maximum_absolute_delta": "REPLACE_AFTER_G1"
+  },
+  "feature_components": [
+    {
+      "name": "protenix_pair_z_cross_chain_mean_std",
+      "source_tensor": "Protenix.get_pairformer_output:return[2]:z",
+      "pooling": "cross_chain_direction_symmetrized_mean_and_std"
+    }
+  ],
+  "created_at": "REPLACE_WITH_ISO8601_TIMESTAMP"
+}

@@ -1,0 +1,20 @@
+{
+  "errors": [],
+  "warnings": [
+    "proteins.csv:239: ambiguous/nonstandard residue in H3BTB9",
+    "proteins.csv:1429: ambiguous/nonstandard residue in P07203",
+    "proteins.csv:2931: ambiguous/nonstandard residue in P59797",
+    "proteins.csv:6228: ambiguous/nonstandard residue in Q8WWX9",
+    "proteins.csv:7198: ambiguous/nonstandard residue in Q9BQE4",
+    "proteins.csv:7546: ambiguous/nonstandard residue in Q9C0D9",
+    "proteins.csv:8320: ambiguous/nonstandard residue in Q9NZV6",
+    "proteins.csv:9033: ambiguous/nonstandard residue in Q9Y6D0"
+  ],
+  "counts": {
+    "proteins": 9063,
+    "pairs": 53072,
+    "evidence": 55513,
+    "split_assignments": 0
+  },
+  "passed": true
+}

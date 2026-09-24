@@ -1,0 +1,10 @@
+{
+  "schema_version": "1.0",
+  "method": "export_protein_fasta_v0.1",
+  "proteins_path": "D:\\hitsz\\research\\protenix_ppi\\data\\processed\\human_ppi_2026_03_v0.3\\proteins.csv",
+  "proteins_sha256": "aec9b7e9c34051daad82a145c317622a804b9d498171b6ff466d27228d1c5840",
+  "sequence_count": 9377,
+  "fasta_path": "D:\\hitsz\\research\\protenix_ppi\\data\\processed\\human_ppi_2026_03_v0.3\\proteins.fasta",
+  "fasta_sha256": "975e5324f255c0ff71d241fb8d092dc9899e0308c4ff315bed8acd70cf1344d3",
+  "header_policy": "exact_uniprot_accession_only"
+}

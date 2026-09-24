@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0",
+  "audit_date": "2026-09-15",
+  "repository_url": "https://github.com/bytedance/Protenix.git",
+  "observed_source_commit": "4c355be4553512f72453ecbfb65e69f4c35d1413",
+  "status": "candidate_hook_for_g1_reverification_not_a_final_feature_lock",
+  "source_files": {
+    "protenix/model/protenix.py": {
+      "sha256": "2ab922aae47e9344d92f515c450c2bd8182aa5c63e60329b5fbd9ed9f8eac163",
+      "observations": [
+        "get_pairformer_output constructs input embeddings, recycles, and returns s_inputs, s, z",
+        "z is the final Pairformer pair representation before diffusion and native confidence execution",
+        "the inference loop receives z from get_pairformer_output and passes it to diffusion and confidence paths",
+        "z is therefore a genuine structural/pair representation candidate, not a native scalar score"
+      ]
+    },
+    "protenix/model/modules/pairformer.py": {
+      "sha256": "876b29a323ebf5a9929be0b8efa6b45027108640784a250e3ce446e39ccae2eb",
+      "observations": [
+        "PairformerStack.forward consumes s and z and returns updated s and z",
+        "the pair representation has the documented shape [..., N_token, N_token, c_z]",
+        "the default primary model configuration must be read on the G1 machine rather than assumed here"
+      ]
+    },
+    "protenix/model/modules/embedders.py": {
+      "sha256": "05e9e8d7bc8e9f917a6cadb3534b4b95764ea9968c19bc38d4743a29daf982f8",
+      "observations": [
+        "InputFeatureEmbedder produces the input single representation used to initialize pair features",
+        "ESM token embeddings can be included in s_inputs when configured; the G1 condition must record this policy"
+      ]
+    },
+    "protenix/model/modules/confidence.py": {
+      "sha256": "064375730d100f1536cf1a2061fa08ad0a039f21c4bf2965275a74646d33cebd",
+      "observations": [
+        "ConfidenceHead receives z_trunk but is a structural-confidence output path",
+        "native pLDDT/PAE/PDE outputs must not be mistaken for the primary B2 pair representation"
+      ]
+    }
+  },
+  "candidate_hook": {
+    "module_call": "Protenix.get_pairformer_output",
+    "returned_tuple": ["s_inputs", "s", "z"],
+    "candidate_tensor": "z",
+    "candidate_tensor_semantics": "final recycled Pairformer pair representation before diffusion",
+    "expected_shape": "[..., N_token, N_token, c_z]",
+    "expected_default_c_z": 128,
+    "g1_requirements": [
+      "verify exact module path and tensor shape on the executed commit",
+      "verify z is captured after the final configured recycle cycle",
+      "record batch/sample/cycle dimensions and dtype",
+      "record whether MSA/template inputs are enabled",
+      "perform a chain-order swap audit before feature extraction"
+    ]
+  },
+  "predeclared_pooling_candidate": {
+    "label_blind": true,
+    "chain_mask": "token chain identifiers from the official input; retain only i,j with different protein chains",
+    "direction_symmetrization": "z_cross = 0.5 * (z_cross + transpose(z_cross, token_i, token_j))",
+    "pooling": "per-channel mean and standard deviation over the cross-chain token-pair mask",
+    "expected_feature_dimension": "2 * c_z",
+    "a_b_swap_policy": "recompute with swapped chain order and require max absolute final-vector delta <= G1-registered tolerance",
+    "not_final_until_g1": true
+  },
+  "prohibited_substitutions": [
+    "native iptm or ranking_score as the sole B2 representation",
+    "a tensor captured after reading PPI labels",
+    "canonical accession ordering as the only symmetry mechanism",
+    "a hook or pooling rule copied from a different Protenix commit without re-audit"
+  ]
+}

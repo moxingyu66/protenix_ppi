@@ -1,0 +1,91 @@
+{
+  "schema_version": "1.0",
+  "method": "fetch_deferred_uniprot_records_v0.1",
+  "uniprot_release": "2026_03",
+  "uniprot_release_date": "02-Sep-2026",
+  "resolution_input": {
+    "path": "D:\\hitsz\\research\\protenix_ppi\\data\\interim\\identifier_resolution_2026_03_v0.1\\identifier_resolution.tsv",
+    "sha256": "7055c59231d956e0c04b12d17ddb6b85ebf22d2fe90d91d54a0f2e5689fc3705"
+  },
+  "release_evidence_sha256": "733913b362b641ac2d8de42a6220e794abde0e47d57d6feb57e442c6bf3dac6e",
+  "request": {
+    "count": 924,
+    "sha256": "a115bdd93adcc5f71cc4a3cc7f5f9d309a8e63a614d7bb968a0dbd561628406e"
+  },
+  "records": {
+    "count": 912,
+    "sha256": "b930a0b844e430a425b05de3e323ed54ac58b3614d63ad80cd292714ceb47f43",
+    "reviewed_counts": {
+      "reviewed": 594,
+      "unreviewed": 318
+    },
+    "organism_counts": {
+      "10090": 345,
+      "10116": 107,
+      "10360": 6,
+      "10363": 1,
+      "10377": 4,
+      "10515": 1,
+      "10636": 1,
+      "11072": 1,
+      "11676": 1,
+      "11706": 3,
+      "11909": 1,
+      "11926": 1,
+      "12281": 1,
+      "139": 1,
+      "187420": 2,
+      "224308": 4,
+      "224326": 1,
+      "28285": 1,
+      "284812": 4,
+      "2884424": 1,
+      "300852": 2,
+      "3077": 1,
+      "311339": 1,
+      "34632": 1,
+      "355329": 1,
+      "35670": 1,
+      "3702": 22,
+      "37296": 2,
+      "381517": 1,
+      "3818": 1,
+      "3823": 1,
+      "3864": 1,
+      "388812": 1,
+      "39443": 1,
+      "3988": 1,
+      "4081": 2,
+      "408871": 1,
+      "4102": 1,
+      "559292": 13,
+      "562": 4,
+      "5691": 2,
+      "5908": 1,
+      "6100": 1,
+      "6239": 4,
+      "7227": 17,
+      "7787": 1,
+      "8090": 4,
+      "83333": 24,
+      "8355": 8,
+      "9031": 4,
+      "9557": 1,
+      "9606": 265,
+      "9823": 12,
+      "9913": 14,
+      "99287": 2,
+      "9940": 1,
+      "9986": 5
+    }
+  },
+  "missing": {
+    "count": 12,
+    "sha256": "722bb9037125f47def2a723571488d8c649e2648becc505be4e6c845c699e070"
+  },
+  "api_headers": {
+    "x-uniprot-release": "2026_03",
+    "x-uniprot-release-date": "02-September-2026",
+    "x-api-deployment-date": "02-September-2026"
+  }
+}

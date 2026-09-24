@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0",
+  "policy_id": "human_direct_ppi_psi_mi_v0.1",
+  "ontology_commit": "13b574767a81580092e7f6b62ff84c0c8f75cf69",
+  "ontology_sha256": "b1315efd86a13988df97d2daefed025dbd26b98d66104da76ea3e85706534d2f",
+  "interaction_type_policy": {
+    "auto_accept_exact": [
+      "MI:0407"
+    ],
+    "descendants_require_manual_review": true,
+    "never_auto_accept_exact": [
+      "MI:0914",
+      "MI:0915",
+      "MI:0208"
+    ]
+  },
+  "detection_method_policy": {
+    "auto_accept_roots_with_descendants": [
+      "MI:0018",
+      "MI:0053",
+      "MI:0055",
+      "MI:0065",
+      "MI:0077",
+      "MI:0107",
+      "MI:0114",
+      "MI:0969",
+      "MI:1086",
+      "MI:1247",
+      "MI:2422"
+    ],
+    "never_auto_accept_roots_with_descendants": [
+      "MI:0004",
+      "MI:0019",
+      "MI:0096"
+    ],
+    "manual_review_exact_even_if_under_auto_root": [
+      "MI:0437",
+      "MI:0824",
+      "MI:0825"
+    ],
+    "other_experimental_methods_require_manual_review": true
+  },
+  "decision_rule": "An IntAct row is an automatic positive candidate only when its interaction type is exactly MI:0407 and at least one non-obsolete detection-method term is in the generated auto-accept set. Protein three-hybrid and x-ray powder/fiber diffraction are manually reviewed even though they descend from an accepted root. MI:0407 descendants, unlisted experimental methods, obsolete terms, and ambiguous multi-valued fields enter manual review. Generic physical association or association is never auto-accepted.",
+  "scientific_scope": "Conservative high-precision seed benchmark for direct heterotypic human protein-protein interactions; this is not a claim that excluded records are non-interactions."
+}

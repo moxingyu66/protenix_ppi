@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0",
+  "audit_date": "2026-09-15",
+  "repository_url": "https://github.com/bytedance/Protenix.git",
+  "observed_head_commit": "4c355be4553512f72453ecbfb65e69f4c35d1413",
+  "observed_commit_date_utc": "2026-08-01T10:41:08Z",
+  "status": "upstream_snapshot_for_planning_not_primary_backbone_lock",
+  "files": {
+    "protenix/model/protenix.py": {
+      "url": "https://raw.githubusercontent.com/bytedance/Protenix/4c355be4553512f72453ecbfb65e69f4c35d1413/protenix/model/protenix.py",
+      "sha256": "2ab922aae47e9344d92f515c450c2bd8182aa5c63e60329b5fbd9ed9f8eac163",
+      "bytes": 38379,
+      "observations": [
+        "line 107 reads train_confidence_only from configuration",
+        "line 138 instantiates ConfidenceHead",
+        "lines 191-298 disable trunk gradients/eval trunk modules in confidence-only flow",
+        "line 795 returns before diffusion and distogram training losses when train_confidence_only is active"
+      ]
+    },
+    "protenix/model/modules/confidence.py": {
+      "url": "https://raw.githubusercontent.com/bytedance/Protenix/4c355be4553512f72453ecbfb65e69f4c35d1413/protenix/model/modules/confidence.py",
+      "sha256": "064375730d100f1536cf1a2061fa08ad0a039f21c4bf2965275a74646d33cebd",
+      "bytes": 14404,
+      "observations": [
+        "Defines the native ConfidenceHead used for structural-confidence outputs"
+      ]
+    },
+    "protenix/utils/training.py": {
+      "url": "https://raw.githubusercontent.com/bytedance/Protenix/4c355be4553512f72453ecbfb65e69f4c35d1413/protenix/utils/training.py",
+      "sha256": "b97c8904f6a7517e592b1730fb9cf74299717ca057400529dc116cef3498742f",
+      "bytes": 5592,
+      "observations": [
+        "line 79 enters the AdamW branch",
+        "the AdamW branch constructs the optimizer from all parameters whose requires_grad flag is true",
+        "substring-based finetune parameter grouping begins only in the non-AdamW branch at lines 88-103",
+        "therefore finetune_params_with_substring alone is not proof of freezing under AdamW"
+      ]
+    },
+    "configs/configs_base.py": {
+      "url": "https://raw.githubusercontent.com/bytedance/Protenix/4c355be4553512f72453ecbfb65e69f4c35d1413/configs/configs_base.py",
+      "sha256": "36c298136de4c72229aa00a13bd31552dd6995ba4a69d8e11c5372410101e566",
+      "bytes": 15851,
+      "observations": [
+        "line 45 defaults train_confidence_only to false"
+      ]
+    }
+  },
+  "study_decisions": [
+    "Repeat this audit on the exact G1-pinned commit; do not substitute this moving upstream snapshot for backbone_lock.json.",
+    "Treat native confidence-only training as structural-confidence training, not as a binary PPI-label objective.",
+    "For B3, keep Protenix backbone parameters outside the optimizer and train a separately serialized PPI task head on frozen Protenix features.",
+    "Any future in-model head training must explicitly set and verify requires_grad for every named parameter and record zero gradients on frozen parameters."
+  ]
+}

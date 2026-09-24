@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0",
+  "method": "resolve_identifier_mappings_v0.2",
+  "uniprot_release": "2026_03",
+  "policy": "accept_only_unique_reviewed_human_target_first_tier",
+  "inputs": {
+    "inventory_sha256": "80d88e8c4a0ee78e33f6b27d0739cfbada1dbeb7a5f969fdeeccc82c3f485f30",
+    "ensembl_mapping_sha256": "8a3b5943225968167818466ad8ee79dc7d9429695e249c9fc62769abeebcddd4",
+    "uniprot_mapping_sha256": "1ade55963ead30a385187fa2d8185297daa49bb6bc82bbddc41b9478c477fd25",
+    "reviewed_snapshot_sha256": "d3a3359d1dff9757c0109effde71972f3d74fe6c6c068393a1f01953e82c3f68",
+    "uniprot_manifest_sha256": "a792488c43b289d966f7d05ec5357708d7a13ea4342b37e6cafb263e0ef59394",
+    "deferred_snapshot_sha256": "b930a0b844e430a425b05de3e323ed54ac58b3614d63ad80cd292714ceb47f43",
+    "deferred_metadata_sha256": "0f24f5431c8864edab26d2593918488073d41af729d7eca55a3f9f5228ae3c45"
+  },
+  "counts": {
+    "inventory_rows": 12887,
+    "unique_accepted_proteins": 9255,
+    "status": {
+      "accepted": 10851,
+      "deferred": 12,
+      "excluded": 645,
+      "manual_review": 39,
+      "quarantine": 1340
+    },
+    "reason": {
+      "isoform_specific_source_not_folded_to_canonical": 500,
+      "multiple_or_cross_species_targets_without_unique_human_mapping": 27,
+      "multiple_reviewed_human_targets": 50,
+      "no_human_target_in_pinned_release": 645,
+      "non_uniprot_primary_identifier": 39,
+      "target_record_missing_from_pinned_snapshot": 12,
+      "unique_current_human_target_unreviewed": 114,
+      "unique_reviewed_human_target": 10737,
+      "unmapped_in_pinned_uniprot_release": 763
+    },
+    "accepted_rows_by_source": {
+      "HuRI": 8152,
+      "IntAct": 1902,
+      "Negatome 2.0": 797
+    }
+  },
+  "outputs": {
+    "identifier_resolution.tsv": {
+      "sha256": "7d5896527dae97c4b80fbcad141cb0d9df205dc5f53927fffb0b1af6d7deb0c6",
+      "rows": 12887
+    },
+    "identifier_quarantine.tsv": {
+      "sha256": "14521538de7cb7a57e57577492d0002c905cbcde104cb626a67ea2ea8bcd4ce7",
+      "rows": 2036
+    },
+    "proteins_precluster.csv": {
+      "sha256": "b485f2443d3fcf854a34a9cc852cbb636552ee1872f2056300b13354696f5e69",
+      "rows": 9255
+    }
+  },
+  "next_step": "Construct traceable pair/evidence tables, resolve positive-negative contradictions, and preserve all quarantine rows outside the eligible benchmark."
+}

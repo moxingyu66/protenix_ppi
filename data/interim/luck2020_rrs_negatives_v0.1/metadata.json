@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "method": "extract_luck2020_rrs_screen_negatives_v0.1",
+  "source_version": "Nature_supplement_2020-04-08",
+  "source_archive_sha256": "377f3dca340ab706721b8545afa00c9777dce6b3aeda1c79a3902d4ad5c43a06",
+  "counts": {
+    "table5_candidate_negative": 348,
+    "table5_excluded_autoactivator": 59,
+    "table5_excluded_invalid_test": 23,
+    "table5_excluded_non_rrs": 504,
+    "table5_excluded_positive_result": 1,
+    "table5_quarantine_ambiguous_orf_mapping": 109,
+    "table6_candidate_negative": 814,
+    "table6_excluded_missing_result": 88,
+    "table6_excluded_non_rrs": 1912,
+    "table6_excluded_positive_result": 9,
+    "table6_quarantine_ambiguous_orf_mapping": 16,
+    "candidate_rows": 1162,
+    "candidate_unique_ensembl_pairs": 421,
+    "unique_ensembl_genes_for_mapping": 758,
+    "quarantine_rows": 125
+  },
+  "outputs": {
+    "screen_negative_candidates.tsv": {
+      "sha256": "f856ecdc11b9d879240afada7d077e59aee226cd3545df3d3cb4288b8380d167",
+      "rows": 1162
+    },
+    "source_quarantine.tsv": {
+      "sha256": "d08fb053c8ead2af892c0a57b81502a53c2786d74d3841ac715b4ce990131171",
+      "rows": 125
+    },
+    "identifier_inventory.tsv": {
+      "sha256": "47854431e9d56de10218583c255bb5fa9f657c33a81e583621069d911082248d",
+      "rows": 758
+    },
+    "ensembl_gene_ids.txt": {
+      "sha256": "be213951c4f33c5df5b27b4a1d56e45cfb33074a2efc62f4ce4fe7e59a5c0a34",
+      "rows": 758
+    }
+  },
+  "interpretation_warning": "Candidates are explicitly negative assay observations for randomly selected RRS pairs. They are a screen-negative stratum, not universal evidence of non-binding."
+}

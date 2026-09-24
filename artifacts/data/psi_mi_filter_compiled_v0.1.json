@@ -1,0 +1,575 @@
+{
+  "schema_version": "1.0",
+  "policy_id": "human_direct_ppi_psi_mi_v0.1",
+  "ontology_commit": "13b574767a81580092e7f6b62ff84c0c8f75cf69",
+  "ontology_sha256": "b1315efd86a13988df97d2daefed025dbd26b98d66104da76ea3e85706534d2f",
+  "policy_sha256": "cbe74eea2887805a18b516494ed0c845e85a16351fbdd5d7c5656359159e49df",
+  "interaction_type": {
+    "auto_accept_exact": [
+      {
+        "id": "MI:0407",
+        "name": "direct interaction"
+      }
+    ],
+    "direct_descendants_manual_review": [
+      {
+        "id": "MI:0192",
+        "name": "acetylation reaction"
+      },
+      {
+        "id": "MI:0193",
+        "name": "amidation reaction"
+      },
+      {
+        "id": "MI:0194",
+        "name": "cleavage reaction"
+      },
+      {
+        "id": "MI:0195",
+        "name": "covalent binding"
+      },
+      {
+        "id": "MI:0197",
+        "name": "deacetylation reaction"
+      },
+      {
+        "id": "MI:0198",
+        "name": "defarnesylation reaction"
+      },
+      {
+        "id": "MI:0199",
+        "name": "deformylation reaction"
+      },
+      {
+        "id": "MI:0200",
+        "name": "degeranylation reaction"
+      },
+      {
+        "id": "MI:0201",
+        "name": "demyristoylation reaction"
+      },
+      {
+        "id": "MI:0202",
+        "name": "depalmitoylation reaction"
+      },
+      {
+        "id": "MI:0203",
+        "name": "dephosphorylation reaction"
+      },
+      {
+        "id": "MI:0204",
+        "name": "deubiquitination reaction"
+      },
+      {
+        "id": "MI:0206",
+        "name": "farnesylation reaction"
+      },
+      {
+        "id": "MI:0207",
+        "name": "formylation reaction"
+      },
+      {
+        "id": "MI:0209",
+        "name": "geranylgeranylation reaction"
+      },
+      {
+        "id": "MI:0210",
+        "name": "hydroxylation reaction"
+      },
+      {
+        "id": "MI:0211",
+        "name": "lipid addition"
+      },
+      {
+        "id": "MI:0212",
+        "name": "lipoprotein cleavage reaction"
+      },
+      {
+        "id": "MI:0213",
+        "name": "methylation reaction"
+      },
+      {
+        "id": "MI:0214",
+        "name": "myristoylation reaction"
+      },
+      {
+        "id": "MI:0216",
+        "name": "palmitoylation reaction"
+      },
+      {
+        "id": "MI:0217",
+        "name": "phosphorylation reaction"
+      },
+      {
+        "id": "MI:0220",
+        "name": "ubiquitination reaction"
+      },
+      {
+        "id": "MI:0408",
+        "name": "disulfide bond"
+      },
+      {
+        "id": "MI:0414",
+        "name": "enzymatic reaction"
+      },
+      {
+        "id": "MI:0556",
+        "name": "transglutamination reaction"
+      },
+      {
+        "id": "MI:0557",
+        "name": "adp ribosylation reaction"
+      },
+      {
+        "id": "MI:0558",
+        "name": "deglycosylation reaction"
+      },
+      {
+        "id": "MI:0559",
+        "name": "glycosylation reaction"
+      },
+      {
+        "id": "MI:0566",
+        "name": "sumoylation reaction"
+      },
+      {
+        "id": "MI:0567",
+        "name": "neddylation reaction"
+      },
+      {
+        "id": "MI:0568",
+        "name": "desumoylation reaction"
+      },
+      {
+        "id": "MI:0569",
+        "name": "deneddylation reaction"
+      },
+      {
+        "id": "MI:0570",
+        "name": "protein cleavage"
+      },
+      {
+        "id": "MI:0571",
+        "name": "mrna cleavage"
+      },
+      {
+        "id": "MI:0572",
+        "name": "dna cleavage"
+      },
+      {
+        "id": "MI:0701",
+        "name": "dna strand elongation"
+      },
+      {
+        "id": "MI:0844",
+        "name": "phosphotransfer reaction"
+      },
+      {
+        "id": "MI:0871",
+        "name": "demethylation reaction"
+      },
+      {
+        "id": "MI:0881",
+        "name": "nucleoside triphosphatase reaction"
+      },
+      {
+        "id": "MI:0882",
+        "name": "atpase reaction"
+      },
+      {
+        "id": "MI:0883",
+        "name": "gtpase reaction"
+      },
+      {
+        "id": "MI:0902",
+        "name": "rna cleavage"
+      },
+      {
+        "id": "MI:0910",
+        "name": "nucleic acid cleavage"
+      },
+      {
+        "id": "MI:0945",
+        "name": "oxidoreductase activity electron transfer reaction"
+      },
+      {
+        "id": "MI:0971",
+        "name": "phosphopantetheinylation"
+      },
+      {
+        "id": "MI:0985",
+        "name": "deamination reaction"
+      },
+      {
+        "id": "MI:0986",
+        "name": "nucleic acid strand elongation reaction"
+      },
+      {
+        "id": "MI:0987",
+        "name": "rna strand elongation"
+      },
+      {
+        "id": "MI:1027",
+        "name": "diphtamidation reaction"
+      },
+      {
+        "id": "MI:1126",
+        "name": "self interaction"
+      },
+      {
+        "id": "MI:1127",
+        "name": "putative self interaction"
+      },
+      {
+        "id": "MI:1139",
+        "name": "carboxylation reaction"
+      },
+      {
+        "id": "MI:1140",
+        "name": "decarboxylation reaction"
+      },
+      {
+        "id": "MI:1143",
+        "name": "aminoacylation reaction"
+      },
+      {
+        "id": "MI:1146",
+        "name": "phospholipase reaction"
+      },
+      {
+        "id": "MI:1148",
+        "name": "ampylation reaction"
+      },
+      {
+        "id": "MI:1230",
+        "name": "uridylation reaction"
+      },
+      {
+        "id": "MI:1237",
+        "name": "proline isomerization  reaction"
+      },
+      {
+        "id": "MI:1250",
+        "name": "isomerase reaction"
+      },
+      {
+        "id": "MI:1251",
+        "name": "methylmalonyl-CoA isomerase reaction"
+      },
+      {
+        "id": "MI:1310",
+        "name": "de-ADP-ribosylation reaction"
+      },
+      {
+        "id": "MI:1327",
+        "name": "sulfurtransfer reaction"
+      },
+      {
+        "id": "MI:1355",
+        "name": "lipid cleavage"
+      },
+      {
+        "id": "MI:2252",
+        "name": "guanine nucleotide exchange factor reaction"
+      },
+      {
+        "id": "MI:2263",
+        "name": "s-nitrosylation"
+      },
+      {
+        "id": "MI:2272",
+        "name": "tyrosinylation"
+      },
+      {
+        "id": "MI:2273",
+        "name": "tyrosination"
+      },
+      {
+        "id": "MI:2280",
+        "name": "deamidation reaction"
+      },
+      {
+        "id": "MI:2356",
+        "name": "adp deribosylation reaction"
+      }
+    ],
+    "never_auto_accept_exact": [
+      {
+        "id": "MI:0208",
+        "name": "genetic interaction (sensu unexpected)"
+      },
+      {
+        "id": "MI:0914",
+        "name": "association"
+      },
+      {
+        "id": "MI:0915",
+        "name": "physical association"
+      }
+    ]
+  },
+  "detection_method": {
+    "auto_accept_roots": [
+      {
+        "id": "MI:0018",
+        "name": "two hybrid"
+      },
+      {
+        "id": "MI:0053",
+        "name": "fluorescence polarization spectroscopy"
+      },
+      {
+        "id": "MI:0055",
+        "name": "fluorescent resonance energy transfer"
+      },
+      {
+        "id": "MI:0065",
+        "name": "isothermal titration calorimetry"
+      },
+      {
+        "id": "MI:0077",
+        "name": "nuclear magnetic resonance"
+      },
+      {
+        "id": "MI:0107",
+        "name": "surface plasmon resonance"
+      },
+      {
+        "id": "MI:0114",
+        "name": "x-ray crystallography"
+      },
+      {
+        "id": "MI:0969",
+        "name": "bio-layer interferometry"
+      },
+      {
+        "id": "MI:1086",
+        "name": "equilibrium dialysis"
+      },
+      {
+        "id": "MI:1247",
+        "name": "microscale thermophoresis"
+      },
+      {
+        "id": "MI:2422",
+        "name": "mass photometry"
+      }
+    ],
+    "auto_accept_non_obsolete_closure": [
+      {
+        "id": "MI:0018",
+        "name": "two hybrid"
+      },
+      {
+        "id": "MI:0053",
+        "name": "fluorescence polarization spectroscopy"
+      },
+      {
+        "id": "MI:0055",
+        "name": "fluorescent resonance energy transfer"
+      },
+      {
+        "id": "MI:0065",
+        "name": "isothermal titration calorimetry"
+      },
+      {
+        "id": "MI:0077",
+        "name": "nuclear magnetic resonance"
+      },
+      {
+        "id": "MI:0107",
+        "name": "surface plasmon resonance"
+      },
+      {
+        "id": "MI:0114",
+        "name": "x-ray crystallography"
+      },
+      {
+        "id": "MI:0397",
+        "name": "two hybrid array"
+      },
+      {
+        "id": "MI:0398",
+        "name": "two hybrid pooling approach"
+      },
+      {
+        "id": "MI:0399",
+        "name": "two hybrid fragment pooling approach"
+      },
+      {
+        "id": "MI:0727",
+        "name": "lexa b52 complementation"
+      },
+      {
+        "id": "MI:0728",
+        "name": "gal4 vp16 complementation"
+      },
+      {
+        "id": "MI:0916",
+        "name": "lexa vp16 complementation"
+      },
+      {
+        "id": "MI:0921",
+        "name": "surface plasmon resonance array"
+      },
+      {
+        "id": "MI:0969",
+        "name": "bio-layer interferometry"
+      },
+      {
+        "id": "MI:1086",
+        "name": "equilibrium dialysis"
+      },
+      {
+        "id": "MI:1103",
+        "name": "solution state nmr"
+      },
+      {
+        "id": "MI:1104",
+        "name": "solid state nmr"
+      },
+      {
+        "id": "MI:1111",
+        "name": "two hybrid bait or prey pooling approach"
+      },
+      {
+        "id": "MI:1112",
+        "name": "two hybrid prey pooling approach"
+      },
+      {
+        "id": "MI:1113",
+        "name": "two hybrid bait and prey pooling approach"
+      },
+      {
+        "id": "MI:1247",
+        "name": "microscale thermophoresis"
+      },
+      {
+        "id": "MI:1356",
+        "name": "validated two hybrid"
+      },
+      {
+        "id": "MI:2215",
+        "name": "barcode fusion genetics two hybrid"
+      },
+      {
+        "id": "MI:2277",
+        "name": "Cr-two hybrid"
+      },
+      {
+        "id": "MI:2422",
+        "name": "mass photometry"
+      }
+    ],
+    "excluded_obsolete_members_of_auto_closure": [],
+    "manual_review_members_removed_from_auto_closure": [
+      {
+        "id": "MI:0437",
+        "name": "protein three hybrid"
+      },
+      {
+        "id": "MI:0824",
+        "name": "x-ray powder diffraction"
+      },
+      {
+        "id": "MI:0825",
+        "name": "x-ray fiber diffraction"
+      }
+    ],
+    "never_auto_accept_roots": [
+      {
+        "id": "MI:0004",
+        "name": "affinity chromatography technology"
+      },
+      {
+        "id": "MI:0019",
+        "name": "coimmunoprecipitation"
+      },
+      {
+        "id": "MI:0096",
+        "name": "pull down"
+      }
+    ],
+    "never_auto_accept_closure": [
+      {
+        "id": "MI:0004",
+        "name": "affinity chromatography technology"
+      },
+      {
+        "id": "MI:0006",
+        "name": "anti bait coimmunoprecipitation"
+      },
+      {
+        "id": "MI:0007",
+        "name": "anti tag coimmunoprecipitation"
+      },
+      {
+        "id": "MI:0019",
+        "name": "coimmunoprecipitation"
+      },
+      {
+        "id": "MI:0096",
+        "name": "pull down"
+      },
+      {
+        "id": "MI:0225",
+        "name": "chromatin immunoprecipitation array"
+      },
+      {
+        "id": "MI:0402",
+        "name": "chromatin immunoprecipitation assay"
+      },
+      {
+        "id": "MI:0676",
+        "name": "tandem affinity purification"
+      },
+      {
+        "id": "MI:0729",
+        "name": "luminescence based mammalian interactome mapping"
+      },
+      {
+        "id": "MI:0858",
+        "name": "immunodepleted coimmunoprecipitation"
+      },
+      {
+        "id": "MI:0946",
+        "name": "miniaturized immunoprecipitation"
+      },
+      {
+        "id": "MI:0963",
+        "name": "interactome parallel affinity capture"
+      },
+      {
+        "id": "MI:1017",
+        "name": "rna immunoprecipitation"
+      },
+      {
+        "id": "MI:1028",
+        "name": "modified chromatin immunoprecipitation"
+      },
+      {
+        "id": "MI:1029",
+        "name": "proteomics of isolated chromatin segments"
+      },
+      {
+        "id": "MI:2288",
+        "name": "DAP-seq"
+      },
+      {
+        "id": "MI:2437",
+        "name": "holdup assay"
+      }
+    ]
+  },
+  "decision_rule": "An IntAct row is an automatic positive candidate only when its interaction type is exactly MI:0407 and at least one non-obsolete detection-method term is in the generated auto-accept set. Protein three-hybrid and x-ray powder/fiber diffraction are manually reviewed even though they descend from an accepted root. MI:0407 descendants, unlisted experimental methods, obsolete terms, and ambiguous multi-valued fields enter manual review. Generic physical association or association is never auto-accepted.",
+  "scientific_scope": "Conservative high-precision seed benchmark for direct heterotypic human protein-protein interactions; this is not a claim that excluded records are non-interactions.",
+  "counts": {
+    "ontology_terms": 1655,
+    "interaction_auto_accept": 1,
+    "interaction_descendants_manual_review": 70,
+    "detection_auto_accept_non_obsolete": 26,
+    "detection_auto_closure_obsolete_excluded": 0,
+    "detection_auto_closure_manual_review_excluded": 3,
+    "detection_never_auto_accept": 17
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0",
+  "condition_id": "B1_primary_msa_no_template_seed_42",
+  "model_name": "protenix_base_default_v1.0.0",
+  "seed": 42,
+  "use_msa": true,
+  "use_template": false,
+  "msa_pair_as_unpair": true,
+  "n_cycle": 10,
+  "n_step": 200,
+  "n_sample": 5,
+  "dtype": "bf16",
+  "use_default_params": true,
+  "enable_tf32": true,
+  "enable_efficient_fusion": true,
+  "enable_diffusion_shared_vars_cache": true,
+  "sorted_by_ranking_score": true,
+  "sample_selection": "native_rank_0",
+  "primary_score_field": "iptm",
+  "comparator_score_fields": [
+    "ranking_score"
+  ],
+  "label_fitted_combination": false
+}

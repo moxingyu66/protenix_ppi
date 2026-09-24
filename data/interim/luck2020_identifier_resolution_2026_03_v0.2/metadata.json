@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0",
+  "method": "resolve_identifier_mappings_v0.2",
+  "uniprot_release": "2026_03",
+  "policy": "accept_only_unique_reviewed_human_target_first_tier",
+  "inputs": {
+    "inventory_sha256": "47854431e9d56de10218583c255bb5fa9f657c33a81e583621069d911082248d",
+    "ensembl_mapping_sha256": "c154ac278fc6210c7dedfa9a5cf3f0929ffad62ad4b21d39ce86ac857787aa64",
+    "uniprot_mapping_sha256": null,
+    "reviewed_snapshot_sha256": "d3a3359d1dff9757c0109effde71972f3d74fe6c6c068393a1f01953e82c3f68",
+    "uniprot_manifest_sha256": "a792488c43b289d966f7d05ec5357708d7a13ea4342b37e6cafb263e0ef59394",
+    "deferred_snapshot_sha256": "4316e38bd39d9bae7a8a808028f5201c2aebea8f1e47bf0e584fd878acf838f4",
+    "deferred_metadata_sha256": "8ee267348d21b444d1ee34dbd84858deef7bff73502d45675d255feea2dfb716"
+  },
+  "counts": {
+    "inventory_rows": 758,
+    "unique_accepted_proteins": 751,
+    "status": {
+      "accepted": 751,
+      "quarantine": 7
+    },
+    "reason": {
+      "multiple_or_cross_species_targets_without_unique_human_mapping": 2,
+      "multiple_reviewed_human_targets": 2,
+      "unique_current_human_target_unreviewed": 1,
+      "unique_reviewed_human_target": 750,
+      "unmapped_in_pinned_uniprot_release": 3
+    },
+    "accepted_rows_by_source": {
+      "Luck2020": 751
+    }
+  },
+  "outputs": {
+    "identifier_resolution.tsv": {
+      "sha256": "365c20cf5038351a946ea786d4ec061d16d1119d5e8eb172d9826af631dd106b",
+      "rows": 758
+    },
+    "identifier_quarantine.tsv": {
+      "sha256": "839d8c47f8ea2f7c320392b4b85fab94ded8f27b2f025b3a5655ddda7d8981e1",
+      "rows": 7
+    },
+    "proteins_precluster.csv": {
+      "sha256": "ddcde3af19393553d3922e13de2376e2d480679739c29c7aae475dcf3e7e2452",
+      "rows": 751
+    }
+  },
+  "next_step": "Construct traceable pair/evidence tables, resolve positive-negative contradictions, and preserve all quarantine rows outside the eligible benchmark."
+}

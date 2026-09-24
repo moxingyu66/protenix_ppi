@@ -1,0 +1,16 @@
+{
+  "loss_name": "REPLACE",
+  "loss_value": 0.0,
+  "loss_finite": false,
+  "total_parameter_count": 0,
+  "trainable_parameter_count": 0,
+  "parameters_with_gradients": 0,
+  "parameters_with_finite_nonzero_gradients": 0,
+  "frozen_parameters_with_gradients": 0,
+  "optimizer_step_completed": false,
+  "peak_gpu_memory_mib": 0,
+  "elapsed_seconds": 0.0,
+  "intended_trainable_prefixes": [],
+  "notes": ""
+}
+

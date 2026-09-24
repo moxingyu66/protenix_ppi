@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "model_name": "protenix_base_default_v1.0.0",
+  "declared_training_cutoff": "2021-09-30",
+  "source_commit": "REPLACE_WITH_40_CHARACTER_GIT_COMMIT",
+  "backbone_lock_sha256": "REPLACE_WITH_64_CHARACTER_SHA256",
+  "g1_manifest_sha256": "REPLACE_WITH_64_CHARACTER_SHA256",
+  "module_call": "Protenix.get_pairformer_output",
+  "candidate_tensor": "z",
+  "capture_stage": "after_final_recycle_before_diffusion",
+  "last_recycle_confirmed": false,
+  "before_diffusion_confirmed": false,
+  "label_blind": true,
+  "labels_read": false,
+  "split_assignments_read": false,
+  "use_msa": true,
+  "use_template": false,
+  "tensor_shape_before_pooling": [1, "N_TOKEN", 128],
+  "c_z": 128,
+  "source_files": {
+    "protenix/model/protenix.py": "REPLACE_WITH_64_CHARACTER_SHA256",
+    "protenix/model/modules/pairformer.py": "REPLACE_WITH_64_CHARACTER_SHA256"
+  },
+  "swap_invariance": {
+    "pair_count": 0,
+    "tolerance": 0.0,
+    "maximum_absolute_delta": 0.0,
+    "passed": false
+  }
+}

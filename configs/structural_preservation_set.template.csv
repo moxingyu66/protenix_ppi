@@ -1,0 +1,2 @@
+complex_id,pdb_id,biological_assembly_id,protein_chain_mapping_json,reference_structure,reference_structure_sha256,source_url,retrieved_at,pdb_release_date,selection_rule_version,bootstrap_group,post_cutoff,homology_audit_passed,ppi_train_overlap
+REPLACE,REPLACE,1,"{""A"":""REPLACE_WITH_UNIPROT_A"",""B"":""REPLACE_WITH_UNIPROT_B""}",REPLACE_WITH_REFERENCE_STRUCTURE,REPLACE_WITH_64_CHARACTER_SHA256,https://files.rcsb.org/download/REPLACE-assembly1.cif,REPLACE_WITH_ISO8601_TIMESTAMP_WITH_TIMEZONE,YYYY-MM-DD,rcsb_human_heteromer_v0.1,REPLACE,true,true,false

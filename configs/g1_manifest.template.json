@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "run_id": "REPLACE_WITH_UNIQUE_RUN_ID",
+  "model_name": "protenix_base_default_v1.0.0",
+  "source_commit": "REPLACE_WITH_40_CHARACTER_GIT_COMMIT",
+  "checkpoint_sha256": "REPLACE_WITH_64_CHARACTER_SHA256",
+  "seed": 101,
+  "input_name": "REPLACE",
+  "input_sha256": "REPLACE_WITH_64_CHARACTER_SHA256",
+  "use_msa": false,
+  "use_template": false,
+  "command_file": "logs/command.txt",
+  "stdout_file": "logs/stdout_stderr.txt",
+  "telemetry_file": "telemetry/nvidia_smi.csv",
+  "gradient_summary_file": "backward/gradient_summary.json",
+  "started_at": "REPLACE_WITH_ISO8601_TIMESTAMP",
+  "finished_at": "REPLACE_WITH_ISO8601_TIMESTAMP",
+  "wall_time_seconds": 0.0,
+  "exit_code": 0
+}
+

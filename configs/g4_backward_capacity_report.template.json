@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0",
+  "method_id": "REPLACE_WITH_B4_OR_B5",
+  "model_name": "protenix_base_default_v1.0.0",
+  "source_commit": "REPLACE_WITH_40_CHARACTER_GIT_COMMIT",
+  "checkpoint_sha256": "REPLACE_WITH_64_CHARACTER_SHA256",
+  "graph_description": "REPLACE_WITH_THE_EXACT_TRAINABLE_MODULES_AND_BACKWARD_GRAPH",
+  "gpu_model": "REPLACE_WITH_GPU_MODEL",
+  "measured_on_target_machine": false,
+  "graph_matches_proposed_method": false,
+  "representative_input_meets_registered_target": false,
+  "trainable_parameter_evidence": {
+    "path": "REPLACE_WITH_TRAINABLE_PARAMETER_AND_GRADIENT_REPORT",
+    "sha256": "REPLACE_WITH_64_CHARACTER_SHA256"
+  },
+  "command_evidence": {
+    "path": "REPLACE_WITH_EXACT_CAPACITY_PROBE_COMMAND_FILE",
+    "sha256": "REPLACE_WITH_64_CHARACTER_SHA256"
+  },
+  "stdout_stderr_evidence": {
+    "path": "REPLACE_WITH_CAPACITY_PROBE_STDOUT_STDERR_FILE",
+    "sha256": "REPLACE_WITH_64_CHARACTER_SHA256"
+  },
+  "telemetry_evidence": {
+    "path": "REPLACE_WITH_CAPACITY_PROBE_GPU_TELEMETRY_FILE",
+    "sha256": "REPLACE_WITH_64_CHARACTER_SHA256"
+  },
+  "measurements": {
+    "representative_total_residues": 0,
+    "microbatch_size": 0,
+    "gradient_accumulation_steps": 0,
+    "intended_trainable_parameter_count": 0,
+    "parameters_with_finite_nonzero_gradients": 0,
+    "frozen_parameters_with_gradients": 0,
+    "peak_gpu_memory_mib": 0,
+    "available_gpu_memory_mib": 0,
+    "elapsed_seconds": 0,
+    "loss_value": 0,
+    "forward_completed": false,
+    "backward_completed": false,
+    "optimizer_step_completed": false,
+    "loss_finite": false,
+    "oom_observed": true
+  }
+}
